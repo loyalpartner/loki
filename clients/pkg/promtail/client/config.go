@@ -33,6 +33,7 @@ type Config struct {
 	BatchSize int           `yaml:"batchsize"`
 
 	Client  config.HTTPClientConfig `yaml:",inline"`
+	Host    string                  `yaml:"host,omitempty"`
 	Headers map[string]string       `yaml:"headers,omitempty"`
 
 	BackoffConfig backoff.Config `yaml:"backoff_config"`
